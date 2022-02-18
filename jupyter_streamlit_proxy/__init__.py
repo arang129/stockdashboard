@@ -10,11 +10,11 @@ def setup_streamlit_proxy():
     return {
         'command': [
             "streamlit",
+            "run",
             "--browser.serverAddress", "0.0.0.0",
             "--server.enableCORS", "False",
             "--server.headless", "True",
             "--server.port", "{port}",
-            "run",
             "webapp.py",
         ],
         'environment': {},
