@@ -18,6 +18,8 @@ def setup_streamlit_proxy():
             #"--server.cookieSecret", cookieSecret,
             "--server.enableCORS", "false",
             "--server.enableXsrfProtection", "false",
+            "--server.maxUploadSize", "32",
+            "--server.maxMessageSize", "32",
             "webapp.py",
         ],
         'environment': {},
