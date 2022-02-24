@@ -7,14 +7,17 @@ for more information.
 import os
 
 def setup_streamlit_proxy():
+    #cookieSecret="P59nUp2LN9AjawT0"
     return {
         'command': [
             "streamlit",
             "run",
             "--browser.serverAddress", "0.0.0.0",
-            "--server.enableCORS", "False",
-            "--server.headless", "True",
             "--server.port", "{port}",
+            "--server.headless", "true",
+            #"--server.cookieSecret", cookieSecret,
+            "--server.enableCORS", "false",
+            "--server.enableXsrfProtection", "false",
             "webapp.py",
         ],
         'environment': {},
