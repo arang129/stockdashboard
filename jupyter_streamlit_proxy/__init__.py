@@ -12,6 +12,7 @@ def setup_streamlit_proxy():
         'command': [
             "streamlit",
             "run",
+            "--browser.gatherUsageStats", "false",
             "--browser.serverAddress", "0.0.0.0",
             "--server.port", "{port}",
             "--server.headless", "true",
@@ -23,6 +24,7 @@ def setup_streamlit_proxy():
             "webapp.py",
         ],
         'environment': {},
+        'timeout': 20.0,
         'launcher_entry': {
             'title': 'streamlit',
             'icon_path': os.path.join(os.path.dirname(os.path.abspath(__file__)), 'icons', 'streamlit-favicon.svg')
