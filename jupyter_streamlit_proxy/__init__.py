@@ -10,7 +10,7 @@ def setup_streamlit_proxy():
     #cookieSecret="P59nUp2LN9AjawT0"
     return {
         'command': [
-            "./run_streamlit.sh",
+            "/home/jovyan/run_streamlit.sh",
             "--browser.gatherUsageStats", "false",
             "--browser.serverAddress", "0.0.0.0",
             "--server.port", "{port}",
