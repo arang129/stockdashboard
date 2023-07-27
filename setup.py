@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="jupyter-streamlit-proxy",
-    version='0.0.1',
+    version='0.0.2',
     url="https://gitlab.mpcdf.mpg.de/khr/jupyter-streamlit-proxy",
     author="Klaus Reuter",
     description="klaus.reuter@mpcdf.mpg.de",
@@ -15,6 +15,7 @@ setuptools.setup(
     entry_points={
         'jupyter_serverproxy_servers': [
             'streamlit = jupyter_streamlit_proxy:setup_streamlit_proxy',
+            'httpserver = jupyter_streamlit_proxy:setup_httpserver_proxy',
         ]
     },
     package_data={

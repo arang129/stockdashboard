@@ -25,7 +25,20 @@ def setup_streamlit_proxy():
         'timeout': 30.0,
         'launcher_entry': {
             'title': 'streamlit',
-            'icon_path': os.path.join(os.path.dirname(os.path.abspath(__file__)), 'icons', 'streamlit-favicon.svg')
+            'icon_path': os.path.join(os.path.dirname(os.path.abspath(__file__)), 'icons', 'streamlit-favicon.svg'),
+        }
+    }
+
+def setup_httpserver_proxy():
+    return {
+        'command': [
+            "python3", "-m", "http.server", "{port}"
+        ],
+        'environment': {},
+        'timeout': 30.0,
+        'launcher_entry': {
+            'title': 'httpserver',
+            'icon_path': os.path.join(os.path.dirname(os.path.abspath(__file__)), 'icons', 'streamlit-favicon.svg'),
         }
     }
 
