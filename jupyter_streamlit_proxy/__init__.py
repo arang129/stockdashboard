@@ -15,9 +15,9 @@ def setup_streamlit_proxy():
             "--browser.serverAddress", "0.0.0.0",
             "--server.port", "{port}",
             "--server.headless", "true",
-            #"--server.cookieSecret", cookieSecret,
             "--server.enableCORS", "false",
             "--server.enableXsrfProtection", "false",
+            #"--server.cookieSecret", cookieSecret,
             #"--server.maxUploadSize", "50",
             #"--server.maxMessageSize", "50",
         ],
@@ -28,3 +28,4 @@ def setup_streamlit_proxy():
             'icon_path': os.path.join(os.path.dirname(os.path.abspath(__file__)), 'icons', 'streamlit-favicon.svg')
         }
     }
+
