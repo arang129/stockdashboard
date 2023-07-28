@@ -15,7 +15,7 @@ setuptools.setup(
     entry_points={
         'jupyter_serverproxy_servers': [
             'streamlit = jupyter_streamlit_proxy:setup_streamlit_proxy',
-            'httpserver = jupyter_streamlit_proxy:setup_httpserver_proxy',
+            'download = jupyter_streamlit_proxy:setup_download_proxy',
         ]
     },
     package_data={
