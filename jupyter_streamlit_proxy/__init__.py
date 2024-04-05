@@ -1,13 +1,21 @@
 """
-Return config on servers to start for streamlitlab
+Return config on servers to start web services from JupyterLab
 
 See https://jupyter-server-proxy.readthedocs.io/en/latest/server-process.html
 for more information.
 """
+
 import os
 
-# proxy for Streamlit
+
 def setup_streamlit_proxy():
+    """
+    Proxy wrapper to launch Streamlit from JupyterHub on Binder
+
+    Note that a shell script that launches the actual Streamlit application is expected at
+    /home/jovyan/run_streamlit.sh
+    The script must accept additional command line flags being passed to streamlit, see below.
+    """
     return {
         'command': [
             "/home/jovyan/run_streamlit.sh",
