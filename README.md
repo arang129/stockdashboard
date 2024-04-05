@@ -12,11 +12,10 @@ As the entry point for the webapp launch it expects a script at
 which has the actual streamlit launch command inside, including the actual
 file name of the web application.
 
-A usage example of the Streamlit-based web application GlycoSHIELD is
-available at:
+A usage example, the Streamlit-based web application GlycoSHIELD, is available at   
 https://gitlab.mpcdf.mpg.de/dioscuri-biophysics/glycoshield-md
 
 The package is provided as-is, see 'LICENSE'.
 
-This package was derived from
+This package was derived from   
 https://jupyter-server-proxy.readthedocs.io/en/latest/
