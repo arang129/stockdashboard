@@ -18,7 +18,7 @@ def setup_streamlit_proxy():
     """
     return {
         'command': [
-            "streamlit", "run", "/home/jupyter-opc/demo/Shiny/appfast.py",
+            "streamlit", "run", "app.py",
             "--browser.gatherUsageStats", "false",
             "--browser.serverAddress", "0.0.0.0",
             "--server.port", "{port}",
