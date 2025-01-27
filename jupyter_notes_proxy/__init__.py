@@ -29,7 +29,7 @@ def setup_notes_proxy():
         'environment': {},
         'timeout': 30.0,
         'launcher_entry': {
-            'title': 'TeachingNotes',
-            'icon_path': os.path.join(os.path.dirname(os.path.abspath(__file__)), 'icons', 'streamlit-favicon.svg'),
+            'title': '上課講義',
+            'icon_path': os.path.join(os.path.dirname(os.path.abspath(__file__)), 'icons', 'notes.svg'),
         }
     }
