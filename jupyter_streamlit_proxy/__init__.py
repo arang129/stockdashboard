@@ -18,7 +18,7 @@ def setup_streamlit_proxy():
     """
     return {
         'command': [
-            "streamlit", "run", "app.py",
+            "streamlit", "run", "/home/jupyter-data/notes/teaching_notes.py",
             "--browser.gatherUsageStats", "false",
             "--browser.serverAddress", "0.0.0.0",
             "--server.port", "{port}",
