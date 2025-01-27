@@ -8,7 +8,7 @@ for more information.
 import os
 
 
-def setup_streamlit_proxy():
+def setup_notes_proxy():
     """
     Proxy wrapper to launch Streamlit from JupyterHub on Binder
 
@@ -29,7 +29,7 @@ def setup_streamlit_proxy():
         'environment': {},
         'timeout': 30.0,
         'launcher_entry': {
-            'title': '課程講義',
+            'title': 'TeachingNotes',
             'icon_path': os.path.join(os.path.dirname(os.path.abspath(__file__)), 'icons', 'streamlit-favicon.svg'),
         }
     }
