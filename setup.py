@@ -1,8 +1,8 @@
 import setuptools
 
 setuptools.setup(
-    name="jupyter-notes-proxy",
-    version='0.0.3',
+    name="stockdashboard",
+    version='0.0.1',
     url="https://gitlab.mpcdf.mpg.de/khr/jupyter-streamlit-proxy",
     author="Klaus Reuter",
     description="klaus.reuter@mpcdf.mpg.de",
@@ -14,10 +14,10 @@ setuptools.setup(
     ],
     entry_points={
         'jupyter_serverproxy_servers': [
-            'notes = jupyter_notes_proxy:setup_notes_proxy',
+            'stockdashboard = stockdashboard:setup_stockdashboard',
         ]
     },
     package_data={
-        'jupyter_notes_proxy': ['icons/*'],
+        'stockdashboard': ['icons/*'],
     },
 )
